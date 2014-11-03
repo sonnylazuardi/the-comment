@@ -1,0 +1,80 @@
+body {
+    background: url('../images/header.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.overlay {
+    position: absolute;
+    background: url('../images/overlay.png');
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.wrapper {
+    margin-top: 40px;
+}
+
+p.heading {
+    font-size: 1.2em;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.board-wrap {
+    margin-top: 30px;
+}
+
+.board-panel {
+    background: #fff;
+    border-radius: 20px;
+    color: #333;
+    padding: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.4);
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+
+.loadmore {
+    text-align: center;
+}
+
+.photo img{
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.25);
+    width: 100%;
+}
+
+.last-word {
+    padding: 5px;
+    background: #3b2d3b;
+    border-radius: 4px;
+}
+
+.last-word a {
+    color: #fff;
+}
+
+.tag {
+    color: #999;
+}
+
+.vote {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
