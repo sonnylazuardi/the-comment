@@ -8,105 +8,176 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body ng-app="TheComment">
     <div class="overlay">
-        <div class="wrapper">
-            <div class="container">
-                <div class="header">
-                    <h1><i class="fa fa-comment"></i> The Comment</h1>
-                    <p class="heading">Playing words cannot be funnier than this</p>
+    </div>
+    <div class="wrapper">
+        <!--<div class="container">
+            <div class="header">
+                <h1><i class="fa fa-comment"></i> The Comment</h1>
+                <p class="heading">Playing words cannot be funnier than this</p>
+            </div>
+            <div class="board-wrap">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="board-panel">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="photo">
+                                        <img src="http://api.randomuser.me/portraits/thumb/men/3.jpg" alt="">
+                                    </div>
+                                    <div class="row vote">
+                                        <div class="col-xs-6">
+                                            250 
+                                            <i class="fa fa-thumbs-up"></i>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            5 
+                                            <i class="fa fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-10">
+                                    <textarea name="message" id="" rows="5" class="form-control">Kancing itu bro ...</textarea>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="board-wrap">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="board-panel">
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <div class="photo">
-                                            <img src="http://api.randomuser.me/portraits/thumb/men/3.jpg" alt="">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="board-panel">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="photo">
+                                        <img src="http://api.randomuser.me/portraits/thumb/men/0.jpg" alt="">
+                                    </div>
+                                    <div class="row vote">
+                                        <div class="col-xs-6">
+                                            250 
+                                            <i class="fa fa-thumbs-up"></i>
                                         </div>
-                                        <div class="row vote">
-                                            <div class="col-xs-6">
-                                                250 
-                                                <i class="fa fa-thumbs-up"></i>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                5 
-                                                <i class="fa fa-thumbs-down"></i>
-                                            </div>
+                                        <div class="col-xs-6">
+                                            5 
+                                            <i class="fa fa-thumbs-down"></i>
                                         </div>
                                     </div>
-                                    <div class="col-xs-10">
-                                        <textarea name="message" id="" rows="5" class="form-control">Kancing itu bro ...</textarea>
-                                        <button type="submit" class="btn btn-default">Submit</button>
-                                    </div>
+                                </div>
+                                <div class="col-xs-10">
+                                    <span class="last-word"><a href="#">Kancing</a></span> itu bro kalo lu kebelet trus mau buang sesuatu. <span class="tag">#Kencing</span> <span class="tag">+10</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="board-panel">
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <div class="photo">
-                                            <img src="http://api.randomuser.me/portraits/thumb/men/0.jpg" alt="">
-                                        </div>
-                                        <div class="row vote">
-                                            <div class="col-xs-6">
-                                                250 
-                                                <i class="fa fa-thumbs-up"></i>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                5 
-                                                <i class="fa fa-thumbs-down"></i>
-                                            </div>
-                                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="board-panel">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="photo">
+                                        <img src="http://api.randomuser.me/portraits/thumb/men/1.jpg" alt="">
                                     </div>
-                                    <div class="col-xs-10">
-                                        <span class="last-word"><a href="#">Kancing</a></span> itu bro kalo lu kebelet trus mau buang sesuatu. <span class="tag">#Kencing</span> <span class="tag">+10</span>
+                                    <div class="row vote">
+                                        <div class="col-xs-6">
+                                            250 
+                                            <i class="fa fa-thumbs-up"></i>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            5 
+                                            <i class="fa fa-thumbs-down"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="board-panel">
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <div class="photo">
-                                            <img src="http://api.randomuser.me/portraits/thumb/men/1.jpg" alt="">
-                                        </div>
-                                        <div class="row vote">
-                                            <div class="col-xs-6">
-                                                250 
-                                                <i class="fa fa-thumbs-up"></i>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                5 
-                                                <i class="fa fa-thumbs-down"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-10">
-                                        <span class="last-word"><a href="#">Kencing</a></span> itu bro kalo lu lari bisa dapet juara 1 pada suatu kompetisi <span class="tag">#Kencang</span> <span class="tag">+10</span>
+                                <div class="col-xs-10">
+                                    <span class="last-word"><a href="#">Kencing</a></span> itu bro kalo lu lari bisa dapet juara 1 pada suatu kompetisi <span class="tag">#Kencang</span> <span class="tag">+10</span>
 
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="loadmore">
-                                <a href="#" class="btn btn-default">Load More</a>
-                            </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="loadmore">
+                            <a href="#" class="btn btn-default">Load More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        -->
+        <div class="header">
+            <h1><i class="fa fa-comment"></i> The Comment</h1>
+            <p class="heading">Playing words cannot be funnier than this</p>
+        </div>
+        <div class="container" ng-controller="HomeCtrl">
+            <ul swing-stack>
+                <li
+                    swing-card
+                    swing-on-throwout="remove($index)"
+                    swing-config
+                    ng-repeat="card in cards"
+                    class="swing-card"
+                    ng-click="comment($index)"
+                    >
+                        <div class="card-body">
+                            <span class="last-word">{{card.name}}</span> itu bro kalo lu kebelet trus mau buang sesuatu. <span class="tag">#Kencing</span>
+                        </div>
+                        <div class="card-profile">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="photo">
+                                    <img src="http://api.randomuser.me/portraits/thumb/men/3.jpg" alt="">
+                                </div>        
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="row">
+                                    <div class="card-username">
+                                        Sonny Lazuardi    
+                                    </div>
+                                    <div class="card-stat">
+                                        <span><i class="fa fa-thumbs-up"></i> 250</span> 
+                                        <span><i class="fa fa-thumbs-down"></i> 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.texttailor.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-swing.min.js"></script>
+    <script>
+        angular.module('TheComment', ['gajus.swing'])
+        .controller('HomeCtrl', function($scope) {
+            $scope.cards = [
+                {name: 'foo'},
+                {name: 'bar'}
+            ];
+            $scope.remove = function (index) {
+                console.log(index);
+                $scope.cards.splice(index, 1);
+                $scope.$apply();
+            };
+            $scope.add = function (name) {
+                $scope.cards.push({name: name});
+            };
+            $scope.comment = function(index) {
+                alert('comment');
+            };
+        });
+        $(function() {
+            setTimeout(function() {
+                $('.card-body').textTailor();    
+            }, 2000);
+        });
+    </script>
 </body>
 </html>

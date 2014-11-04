@@ -7,15 +7,17 @@ body {
     height: 100%;
     color: #fff;
     font-family: 'Montserrat';
+    overflow: hidden;
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     background: url('../images/overlay.png');
     top: 0;
     left: 0;
     width: 100%;
-    padding-bottom: 40px;
+    height: 100%;
+    z-index: -20;
 }
 
 h1, h2, h3 {
@@ -33,6 +35,7 @@ p.heading {
 .header {
     text-align: center;
     font-family: 'Montserrat';
+
 }
 
 .board-wrap {
@@ -54,16 +57,23 @@ p.heading {
     text-align: center;
 }
 
+.photo {
+    width: 50px;
+    height: 50px;
+}
+
 .photo img{
     border-radius: 5px;
     box-shadow: 0px 5px 10px rgba(0,0,0,.25);
-    width: 100%;
+    width: 50px;
+    height: 50px;
 }
 
 .last-word {
-    padding: 5px;
+    padding: 5px 10px;
     background: #3b2d3b;
     border-radius: 4px;
+    color: #fff;
 }
 
 .last-word a {
@@ -74,7 +84,53 @@ p.heading {
     color: #999;
 }
 
-.vote {
-    font-size: 1.3em;
-    margin-top: 20px;
+.card-body {
+    width: 100%;
+    height: 350px;
+    display: block;
 }
+
+.card-profile {
+    height: 50px;
+    width: 100%;
+}
+
+.card-username, .card-stat {
+    line-height: 25px;
+}
+
+.card-stat span {
+    margin-right: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* TINDER STYLE */
+ul[swing-stack] {
+    width: 350px;
+    height: 450px;
+    background: #ED5D52;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    margin-left: -175px;
+    border-radius: 10px; }
+
+li[swing-card] {
+    width: 350px;
+    height: 450px;
+    color: #000;
+    list-style: none;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: 10px solid #ECECEC;
+    box-sizing: border-box;
+    cursor: default; }
+    
