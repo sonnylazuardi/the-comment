@@ -38,6 +38,10 @@ p.heading {
 
 }
 
+.header i {
+    color: #ED5D52;
+}
+
 .board-wrap {
     margin-top: 30px;
 }
@@ -69,15 +73,12 @@ p.heading {
     height: 50px;
 }
 
-.last-word {
+.my-word {
     padding: 5px 10px;
-    background: #3b2d3b;
+    background: #ED5D52;
     border-radius: 4px;
     color: #fff;
-}
-
-.last-word a {
-    color: #fff;
+    cursor: pointer;
 }
 
 .tag {
@@ -96,6 +97,7 @@ p.heading {
 }
 
 .card-username, .card-stat {
+    color: #ED5D52;
     line-height: 25px;
 }
 
@@ -105,6 +107,10 @@ p.heading {
 
 .clear {
     clear: both;
+}
+
+.modal {
+    color: #000;
 }
 
 /* TINDER STYLE */
@@ -134,3 +140,31 @@ li[swing-card] {
     box-sizing: border-box;
     cursor: default; }
     
+
+/* TOAST */
+#toast-left {
+    width: 130px;
+    height: 143px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    display: none;
+}
+#toast-right {
+    width: 130px;
+    height: 143px;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    display: none;
+}
+#toast-left i {
+    font-size: 10em;
+    color: #2ecc71;
+    opacity: .85;
+}
+#toast-right i {
+    font-size: 10em;
+    color: #e74c3c;
+    opacity: .85;   
+}
